@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Job Portal Site</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     @vite(['resources/css/app.css','resources/js/app.js'])
 </head>
-<body class=" bg-black text-white ">
+<body class=" bg-black text-white  font-hanken-grotesk">
     <div>
         <nav class=" flex justify-between p-3 ">
             <div>
@@ -20,12 +21,12 @@
                 <a href="/">Companies</a>
             </div>
             <div>
-                <a href="/">Post a Job</a>
+                <a href="/" class=" hover:text-blue-600 duration-500">Post a Job</a>
             </div>
         </nav>
     </div>
 
-    <main class=" max-w-[970px] mx-auto">
+    <main class=" max-w-[1000px] mx-auto">
         {{ $slot }}
     </main>
 </body>
