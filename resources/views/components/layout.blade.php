@@ -27,12 +27,15 @@
                 <div>
                     <a href="" class=" hover:text-blue-400 transition-all duration-300">Post a job </a>
                 <a href="/logout">
-                    <x-forms.button class=" ms-4 bg-red-700 hover:bg-red-900 transition-all duration-300 ">
+                    <x-forms.button form="logOutForm" class=" ms-4 bg-red-700 hover:bg-red-900 transition-all duration-300 ">
                         Log Out
                     </x-forms.button>
                 </a>
                 </div>
             @endauth
+            <form action="/logout" method="POST" class=" hidden" id="logOutForm">
+                @csrf
+            </form>
             @guest
             <div class=" mr-2"> <a href="/register">Register</a>
                 <a href="/login">Log In</a>
