@@ -14,9 +14,11 @@
 <body class=" bg-black text-white  font-hanken-grotesk">
     <div>
         <nav class=" flex justify-between p-3 ">
-            <div>
+
+            <a href="/">
                 <img src="{{ Vite::asset('resources/image/logo.svg') }}" alt="">
-            </div>
+
+            </a>
             <div class=" space-x-4 font-bold">
                 <a href="/">Jobs</a>
                 <a href="/">Carrer</a>
